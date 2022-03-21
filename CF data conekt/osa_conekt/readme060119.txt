@@ -1,0 +1,18 @@
+1) Species description
+Oryza sativa, commonly known as Asian rice, is the plant species most commonly referred to in English as rice. 
+Oryza sativa is a grass with a genome consisting of 430Mb across 12 chromosomes. 
+It is renowned for being easy to genetically modify, and is a model organism for cereal biology.
+
+From Wikipedia.
+
+Colour: #CD1B50
+Highlight: #1839DD
+
+2) Osa_Mat_edit_modified160119.txt is the correct expression profile.
+Note: modify_JTK_osa.py script forgets to add 'probeset_id' to index name, which crashes pcc.py
+script, corrected it manually.
+
+3)  JTK file: only take genes with 'LOC' and they are all unique
+
+4) osa.mcl given by Marek on 280519 since HCCA clusters doesn't work for this species, so use this to
+upload clusters instead.

@@ -1,0 +1,43 @@
+Whole numbers are gene IDs, the decimal places are splicing isoforms
+
+48923 genes, but 44965 after removing isoforms
+
+1) Species description 
+Solanum pennellii is a wild tomato species endemic to Andean regions in South America, 
+where it has evolved to thrive in arid habitats. Because of its extreme stress tolerance and 
+unusual morphology, it is an important donor of germplasm for the cultivated tomato 
+Solanum lycopersicum1.
+
+Bolger, A., et al. (2014). "The genome of the stress-tolerant wild tomato species Solanum pennellii." Nature Genetics 46: 1034.
+
+Colour 23CD1D
+Highlight E7ED2B
+
+2) spe_conekt.fa is made using windows. linux_spe_conekt_fa\spe_conekt.fa is made
+using linux. Both contain identical information. linux_spe_conekt_fa\spe_conekt.fa.gz
+is made from linux_spe_conekt_fa\spe_conekt.fa and its used to upload gene sequences to conekt
+
+Initally, couldn't upload spe_conekt.fa as conekt says 'data too long for column', not sure
+why this error occurs. Splitting files and uploading them individually worked,
+and they are in upload_seq_error\fasta_splits
+
+However, QW suggested to gzip and upload the whole file, as she normally gzips her files. This
+worked. -> Update 150119: this does not work anymore, instead, find and delete gene with the longest
+sequence
+
+Conclusion: conekt can't seem to handle text/fasta files that there too long under some
+unknown condition, but gzipped files are fine. MM says conekt will unzip gzipped files
+and upload their sequences one by one into the database, so since my error doesnt reappear,
+this means that conekt has a problem with having large files uploaded, rather
+than depositing them in the database.
+
+3) When name_description.txt was first made, isoforms weren't removed hence duplicate genes were present.
+Corrected this on 281218 by removing isoforms, hence no more duplicates. This file is now correct.
+Need to upload this when I am creating final version of Conekt.
+
+- gene expression and JTK file has isoforms, not removed, but only 10% of data so Marek said its fine
+(updated 280519)
+
+4) Add coexpression clusters
+Need to set min cluster size to 1, otherwise my clusters will not be ordered in the way in which
+I want.

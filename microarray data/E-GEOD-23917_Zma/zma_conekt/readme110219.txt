@@ -1,0 +1,22 @@
+1) Species description
+Zea mays, also know as maize or corn, is a cereal grain first domesticated by indigenous peoples in southern Mexico 
+about 10,000 years ago. The leafy stalk of the plant produces pollen inflorescences and separate 
+ovuliferous inflorescences called ears that yield kernels or seeds, which are fruits.
+
+Maize has become a staple food in many parts of the world, with the total production of maize 
+surpassing that of wheat or rice. However, little of this maize is consumed directly by humans: most is 
+used for corn ethanol, animal feed and other maize products, such as corn starch and corn syrup. 
+The six major types of maize are dent corn, flint corn, pod corn, popcorn, flour corn, and sweet corn.
+
+From Wikpedia.
+
+2) JTK.zea_may_edit2.txt is made by hand from JTK.zea_may_edit.txt (located in JTK folder), where all
+timepoints are collasped into 24 h. zma_modified.txt is made by hand from JTK.zea_may_edit2.txt, with
+all JTK specific info removed.
+
+gene_ex_annotation.txt is made by hand from zma_modified.txt.
+
+All the above manually made so that I don't have to write a brand new script to do it. Previous script
+doesn't work as the format of the day/night timepoints are different from the other data sets.
+
+

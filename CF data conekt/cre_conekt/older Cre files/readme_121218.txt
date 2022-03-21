@@ -1,0 +1,4 @@
+1) 17k * found in peptide sequences in cre_aa_conekt.fa hence deleted all of them in Notepad++
+and edited file is calld edit_cre_aa_conekt.fa
+
+2) these files are downloaded from JBI but Marek says dont use them, wait for Camilla

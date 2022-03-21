@@ -1,0 +1,12 @@
+previously, around mid-sept 2018, PRJNA295848_annot.txt had many tabs after each row
+which produced many NA columns in JTK output, refer to Camilla's email on 021018.
+removing these tabs solved this problem
+
+in mid-sept 2018, created a new dataset where all time points had equal replicates, as original
+dataset had unequal number of replicates per time point. JTK was run on this new dataset
+to see if this solved this problem, however it did not. output from this dataset is stored
+in JTK_results_shorter_solpenn
+
+ran JTK on .txt file ending with "_combined_PCA", as it contains the normalised read counts for gene expression
+created JTK.PRJNA295848, and copied and renamed the copy as JTK.sol_pen as this makes it easier for downstream
+heatmap and line graph (gene frequencies) generation

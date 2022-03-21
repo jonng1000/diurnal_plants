@@ -1,0 +1,2 @@
+E-MEXP-2509_combined_PCA_editJTK.txt is from E-MEXP-2509__combined_PCA_edit.txt (remove L0 timepoint).
+JTK.pop_tri_edit.txt is the JTK output, but has 2 days collapsed into 1.

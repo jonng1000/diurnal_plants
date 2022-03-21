@@ -1,0 +1,2 @@
+These are outdated because all genes from CF's JTK are included, but MM wants me to remove
+those genes which do not appear in my cds file (TAIR)

@@ -1,0 +1,1 @@
+bdi_aa_conekt_edited.fa is based on bdi_aa_conekt.fa, edited to remove * for interpro.

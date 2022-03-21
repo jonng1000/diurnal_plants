@@ -1,0 +1,27 @@
+1) Species description
+Klebsormidium is a genus of filamentous charophyte green algae comprising 20 species. 
+The name was proposed in 1972 to resolve confusion in application and status of Hormidium. 
+It occurs mostly in soil and on moist substrates, nevertheless, aquatic and one marine species 
+are also known. Many Klebsormidium-species are able to synthesize substances for UV protection, 
+the so-called mycosporine-like amino acids.
+
+From Wikipedia.
+
+Colour 23CDBC
+Highlight DDDD16
+
+2) For the cds and peptide files, initially removed _v1.1 from gene IDs, which is wrong as they should have been
+left there. Hence had to recreate these files, and shift outdated downstream outputs into the outdated folder.
+
+- name_description_edited.txt is the corrected version of name_description.txt (in outdated folder) 
+as it has _v1.1 added to gene IDs.
+- Ditto for Kfl_Mat_edit_modified300119.txt in relation to Kfl_Mat_edit_modified150119.txt (in outdated folder) 
+
+3) Kfl_Mat_edit_modified.txt is the correct gene expression file.
+Note: modify_JTK_kfl.py script forgets to add 'probeset_id' to index name, which crashes pcc.py
+script, corrected it manually.
+
+4) End Jan, edited some scripts to create processed files which retains original gene
+IDs exactly. however, Conekt didn't seem to match these IDs, hence used the older processed files
+which removed the '_v1.1' and capitalised the first letter, as those worked. Some scripts will
+reflect these changes which have not be rolled back.

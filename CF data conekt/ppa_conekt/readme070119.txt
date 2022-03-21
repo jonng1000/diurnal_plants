@@ -1,0 +1,12 @@
+1) Species description
+Physcomitrella patens, the spreading earthmoss, is a moss (bryophyte) used as a model organism
+for studies on plant evolution, development, and physiology.
+
+From Wikipedia.
+
+Colour 33CDC8
+Highlight DD23BE
+
+2) Ppa_Mat_edit_modified160119.txt is the correct gene expression file.
+Note: modify_JTK_ppa.py script forgets to add 'probeset_id' to index name, which crashes pcc.py
+script, corrected it manually.

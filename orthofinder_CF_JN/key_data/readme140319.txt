@@ -1,0 +1,101 @@
+started reconciling trees: 12pm - finished about 7.20pm -> crashed due to data being too long for column
+started reconciling trees: 10pm - finished about 8.10am -> crashed due to timeout error
+
+Change data type for column
+Problem is: data_phyloxml = db.Column(db.Text)
+But there's no LONGTEXT datatype for flask, although it would theoretically solve the problem
+
+Use the following commands, and the associated outputs should be seen
+MariaDB [diurnal]> DESCRIBE trees;
+
++---------------+-------------+------+-----+---------+----------------+
+
+| Field         | Type        | Null | Key | Default | Extra          |
+
++---------------+-------------+------+-----+---------+----------------+
+
+| id            | int(11)     | NO   | PRI | NULL    | auto_increment |
+
+| label         | varchar(50) | YES  | MUL | NULL    |                |
+
+| data_newick   | text        | YES  |     | NULL    |                |
+
+| data_phyloxml | text        | YES  |     | NULL    |                |
+
+| gf_id         | int(11)     | YES  | MUL | NULL    |                |
+
+| method_id     | int(11)     | YES  | MUL | NULL    |                |
+
++---------------+-------------+------+-----+---------+----------------+
+
+6 rows in set (0.053 sec)
+
+
+MariaDB [diurnal]> ALTER TABLE trees
+    -> MODIFY data_phyloxml LONGTEXT;
+Query OK, 14290 rows affected (4.588 sec)
+Records: 14290  Duplicates: 0  Warnings: 0
+
+MariaDB [diurnal]> DESCRIBE trees;
++---------------+-------------+------+-----+---------+----------------+
+| Field         | Type        | Null | Key | Default | Extra          |
++---------------+-------------+------+-----+---------+----------------+
+| id            | int(11)     | NO   | PRI | NULL    | auto_increment |
+| label         | varchar(50) | YES  | MUL | NULL    |                |
+| data_newick   | text        | YES  |     | NULL    |                |
+| data_phyloxml | longtext    | YES  |     | NULL    |                |
+| gf_id         | int(11)     | YES  | MUL | NULL    |                |
+| method_id     | int(11)     | YES  | MUL | NULL    |                |
++---------------+-------------+------+-----+---------+----------------+
+6 rows in set (0.011 sec)
+
+MariaDB [diurnal]>
+
+http://flask-sqlalchemy.pocoo.org/2.3/models/
+https://stackoverflow.com/questions/13932750/tinytext-text-mediumtext-and-longtext-maximum-storage-sizes
+https://www.w3schools.com/sql/sql_alter.asp
+https://www3.ntu.edu.sg/home/ehchua/programming/sql/MySQL_Beginner.html#zz-2.5
+https://www3.ntu.edu.sg/home/ehchua/programming/sql/MySQL_HowTo.html
+https://stackoverflow.com/questions/30137806/where-can-i-find-a-list-of-the-flask-sqlalchemy-column-types-and-options
+
+timeout error:
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2006, "MySQL server has gone away (ConnectionAbortedError
+
+possible cause is packet size is too large, default is 16MB
+https://stackoverflow.com/questions/16341911/sqlalchemy-error-mysql-server-has-gone-away
+https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet
+https://mariadb.com/kb/en/library/server-system-variables/#max_allowed_packet
+
+Set packet size to be bigger, max is 1GB, but mysql commands below doesnt work
+https://dev.mysql.com/doc/refman/8.0/en/packet-too-large.html
+Need to use the MariaDB ones
+
+In MySQLClient(MariaDB):
+Orignal max_allowed_packet variable is 10485760
+
+show variables like 'max_allowed_packet';
+ max_allowed_packet | 1073741824
+
+can also use this command
+SELECT @@max_allowed_packet;
+
+Change max_allowed_packet to 1GB
+SET GLOBAL max_allowed_packet=1073741824;
+https://stackoverflow.com/questions/8062496/how-to-change-max-allowed-packet-size
+
+Close window, then open it and check max_allowed_packet size to make sure its changed.
+Need to do this step for the change to take effect.
+https://stackoverflow.com/questions/9922894/set-global-max-allowed-packet-doesnt-work
+
+160319
+Above doesn't work, Conekt still crashes, also at ~12h after starting reconciliation of tress
+Implemented Marek's solution to remove a few hundred of the largest tree files, works,
+reconciling tress now takes ~3h.
+
+290319
+redo, format is :0.01 to define branch length leading to clade -> do not add comma at the end of
+this number if its not there
+
+010419
+outdated_010419 contains outdated clade and species tree info
+orthofinder_trees.tar contains tree .txt files uploaded into Conekt

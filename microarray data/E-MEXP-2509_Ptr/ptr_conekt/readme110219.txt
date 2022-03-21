@@ -1,0 +1,18 @@
+1) Species description
+Populus trichocarpa, the black cottonwood, western balsam-poplar or California poplar, is a deciduous 
+broadleaf tree species native to western North America. It is used for timber, and is notable as a model 
+organism in plant biology. A high-coverage genome sequence was published in 2006 and was the first tree 
+genome to be sequenced. Assembly of the genome is particularly difficult due to the tetraploidy of the species. 
+However, long-read Pacbio sequencing enabled the assembly of all scaffolds in 2018.
+
+From Wikipedia.
+
+Colour 6E3699
+Highlight B8481F
+
+2) Gene expression file
+E-MEXP-2509_controls_PCA_editJTK2.txt is modified from E-MEXP-2509_controls_PCA_editJTK.txt. 
+Basically the 48 h time points are compressed into 24 h time points.
+
+4) osa.mcl given by Marek on 280519 since HCCA clusters doesn't work for this species, so use this to
+upload clusters instead.

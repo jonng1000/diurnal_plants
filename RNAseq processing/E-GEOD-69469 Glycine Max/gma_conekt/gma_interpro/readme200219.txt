@@ -1,0 +1,1 @@
+gma_aa_edited.fa is based on gma_aa_conekt.fa, edited to remove * for interpro.

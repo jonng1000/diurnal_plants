@@ -1,0 +1,20 @@
+1) Species description
+Nicotiana attenuata is a species of wild tobacco known by the common name coyote tobacco. It is native to western
+North America from British Columbia to Texas and northern Mexico, where it grows in many types of habitat.
+It is a glandular and sparsely hairy annual herb exceeding a meter in maximum height. The leaf blades may be 
+10 centimetres long, the lower ones oval and the upper narrower in shape, and are borne on petioles. 
+The inflorescence bears several flowers with pinkish or greenish white tubular throats 2 to 3 centimetres 
+long, their bases enclosed in pointed sepals. The flower face has five mostly white lobes. 
+The fruit is a capsule about 1 centimetre long.
+
+From Wikipedia.
+
+Colour A8A419
+Highlight 23DB2F
+
+2) Sequences
+First ID I see in CDS and peptide fasta files is the transcript ID, need to go find something 
+like gene:A4A49_09758 which gives me the correct gene ID
+
+3) tissue-specificity: There's only 2 dark periods of 4h and 8h, hence eliminated midnight, and 
+extended noon, which has 6 time points now.

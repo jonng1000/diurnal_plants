@@ -1,0 +1,19 @@
+1) Species Description
+Brachypodium distachyon, commonly called purple false brome or stiff brome, is 
+a grass species native to southern Europe, northern Africa and southwestern Asia east to India. 
+It is related to the major cereal grain species wheat, barley, oats, maize, rice, rye, sorghum, 
+and millet. It has many qualities that make it an excellent model organism for functional 
+genomics research in temperate grasses, cereals, and dedicated biofuel crops such as switchgrass. 
+These attributes include small genome (~270 Mbp) diploid accessions, a series of polyploid accessions, 
+a small physical stature, self-fertility, a short lifecycle, simple growth requirements, and an 
+efficient transformation system. The genome of Brachypodium distachyon (diploid inbred line Bd21) 
+has been sequenced and published in Nature in 2010.
+
+From Wikipedia.
+
+2) DRA006158_combined_PCA_JTKedit.txt is modified from DRA006158_combined_PCA_JTK.txt. Basically the 48 h time points are
+compressed into 24 h time points.
+ - this is the most updated version
+
+3) tissue-specificity: There's only a dark period of 4h, hence eliminated dusk and night, and extended noon, which
+has 12 time points now

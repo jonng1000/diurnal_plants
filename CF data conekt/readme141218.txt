@@ -1,0 +1,42 @@
+1) run_all_CF_data.py was used on all JTK files from CF, which produced a series of output files,
+including the modified.txt files, which are used for the pcc.py script.
+
+2) These modified.txt files was copied to the workstation, where a bash script was used, which ran my version
+of the pcc.py to generate the coexpression files
+
+3) Output files from 1 and the coexpression files from are stored in folders corresponding to the species name from
+CF's data here
+
+4) Cpa and Ppu's JTK files were processed manually to produce the correct output,
+as run_all_CF_data.py did not process their gene IDs correctly (wrongly split their strings),
+hence in linux their modified.txt and coexpression files are wrong. 
+
+5) JN_pcc.py is MM's pcc.py script, which I modified to make it run on the linux command line
+
+100119
+1) When running InterPro, some peptide files have * at the end and Intepro can't handle them,
+hence it crashed. Need to rerun for those which crashed
+
+Ran successfully:
+ath_aa_conekt_edited.fa
+pab_aa_conekt.fa
+
+Ran unsuccessfully:
+cpa_aa_conekt.fa
+cre_aa_conekt.fa
+kfl_aa_conekt.fa
+osa_aa_conekt.fa
+ppa_aa_conekt.fa
+ppu_aa_conekt.fa
+smo_aa_conekt.fa
+
+Removed * at the end for the above files which run unsuccessfully, and renamed them as 
+XYZ__aa_conekt_edited.fa. Thus for those species which * originally in their peptide
+files, there will be both _conekt.fa and _edited.fa files. _edited.fa files produced in
+this way will be in a separate interpro folder.
+
+170119
+pcc_printout160119.txt is the printout seen when running pcc.py on CF gene expression files.
+Since some of them lacked 'probeset_id' as index name, pcc.py script crashed due to
+columns not being of the same length, hence added it in and reran pcc.py. This produced
+pcc_printout160119_2.txt as the second printout.

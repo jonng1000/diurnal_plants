@@ -1,0 +1,4 @@
+Files here are outdated orthofinder results coz I'm not sure if I removed genes from CF's expression matrix which
+are not found in cds file.
+
+name_description.txt is outdated as the string format is wrong.

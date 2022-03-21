@@ -1,0 +1,5 @@
+linux_sly_genetrees.tar.gz does not work, produce a UnicodeDecodeError: 'utf-8' codec....
+
+- This is when the zip file does not have a flat directory (gzipping in linux can produce
+this by default)
+- make it flat so that it works, can do it in linux or do it in windows where it could be easier 

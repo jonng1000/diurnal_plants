@@ -1,0 +1,9 @@
+Timepoints are a bit confusing here, basically after discussing with Marek:
+
+1) tp12, tp16, tp20, are D4, D8, D12 respectively
+2) tp24, tp28, tp32, are L4, L8, L12 respectively
+
+Spenn-v2-cds-annot.fa.gz was originaly downloaded as Spenn-v2-cds-annot.fa from 
+ftp://ftp.solgenomics.net/genomes/Solanum_pennellii/annotations/
+its .gz coz i probably converted it to this format. Not sure why but its probably due to me
+running it on kallisto (but recently found out kallisto can run using .fa files too

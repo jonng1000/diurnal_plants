@@ -1,0 +1,31 @@
+1) species description
+Cyanophora paradoxa is a freshwater species of Glaucophyte that is used as a model organism. C. paradoxa has two cyanelles or chloroplasts where photosynthesis occurs. Cyanelles are unusual organelles in that they retain a rudimentary peptidoglycan wall.
+
+From Wikipedia.
+
+Colour #3E12CD
+Highlight #85DDDD
+
+2) Initially made cds and peptide sequences follow CF's nomenclature, hence added 'Cpa|' in front
+of every gene ID. But Marek said drop it together with redundant (repeated) parts of the gene ID.
+Hence evm.model.tig00000017.14 -> tig00000017.14
+- remember to change this for CF's JTK files as well.
+-> realised that all my other species starts with letters derived from their name, hence to
+be consistent, I should start cpa's genes with e.g. Cpa.tig00000017.14, so modified relevant
+codes to do this.
+
+Update 10/1/9
+MM actually said don't modify anything as I need to be consistent with what other people did,
+otherwise when people search for the conventional gene IDs, they would not be able to find them
+in my database, hence above in 2) is wrong.
+
+Realised Cyanophora-EVM-CDS-May2016.fasta is good enough for upload hence there's no need to create
+cpa_conekt.fa
+
+cpa_aa_conekt.fa has * removed from Cyanophora-EVM-AA-May2016.fasta
+
+3) Mercator has 5 sequences not annotated because its too long.
+
+4) Cpa_Mat_edit_modified150119.txt is the correct gene expression file.
+Note: modify_JTK_cpa.py script forgets to add 'probeset_id' to index name, which crashes pcc.py
+script, corrected it manually.

@@ -1,0 +1,5 @@
+outdated_kallisto contains outdated kallisto files as CDS file used for it is wrong. The 
+outdated CDS is there as well.
+
+inputFiles_2.txt (deleted) uses 2nd and 3rd sra files as the first file suddenly has a very slow download speed at the
+50% download mark, no idea why but there doesnt seem to be a solution for it.

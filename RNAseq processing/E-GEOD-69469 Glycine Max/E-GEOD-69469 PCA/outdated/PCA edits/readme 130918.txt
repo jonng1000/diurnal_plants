@@ -1,0 +1,2 @@
+these files are because i wanted to label points in the PCA and remove outliers, to check whether
+the PCA makes sense after they have been removed

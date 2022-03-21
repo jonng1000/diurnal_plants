@@ -1,0 +1,3 @@
+these Pearson correlation (PCC) files generated using the pcc.py script, using the 
+PRJNA295848_sol_lyco_modified.txt file, which removes the decimals from the gene IDs 
+from the original gene expression file, PRJNA295848_sol_lyco_combined_PCA.txt.

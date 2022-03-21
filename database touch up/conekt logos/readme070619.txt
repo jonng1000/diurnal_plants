@@ -1,0 +1,18 @@
+logos here are copied to E:\diurnal\conekt\static\img which is where 
+conket uses to draw from there pictures
+
+-> E:\diurnal\conekt\templates\static_pages\main.html
+(main page, uses icon-192x192.png)
+
+icon-48x48.png refers to small conekt icon at top bar of conekt
+-> E:\diurnal\conekt\templates\admin\my_base.html
+
+icon-16x16.png doesn't seem to be directly linked by any file
+(also prob others, but didnt check all)
+
+E:\diurnal\docs\images
+has the older conekt logo: icon-144x144.png but this doesnt seem to appear anywhere in the website
+
+favicon.ico is the type of icon which appears as a pic to the left of the website url and the
+browser type. "favicon" is short for favorite icon, and also known as a shortcut icon.
+-> E:\diurnal\conekt\static\favicon.ico

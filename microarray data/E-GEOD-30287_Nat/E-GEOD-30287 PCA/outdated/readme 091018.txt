@@ -1,0 +1,15 @@
+steps to do PCA plot
+1) copy and paste header of gene expression matrix (time points) and transpose it into  E-GEOD-30287_colourbar_PRE
+2) convert these timepoints into L and D (light and day) categories and paste them into gene expression matrix_PCA file
+assign colour bar values (1-24)
+3) run timepoints_in_cols.py script to transpose these converted time points and add decimals for replicates,
+then assign colour bar values (1-24) in _colorbar file.
+4) use this _colorbar file together with PCA plotting script to generate one PCA plot for this matrix
+5) _colorbar_PRE may not always be needed, used only when I need to further manually process the time points before it is
+appropriate for use in a colour bar
+
+E-GEOD-30287_combined.txt is not the file for PCA plotting, as last three time points are the earliest time points.
+Hence have shifted them to the start of matrix, and have saved this correct matrix as E-GEOD-30287_combined_PCA.txt
+
+280219
+These are outdated as the gene IDs are wrong.

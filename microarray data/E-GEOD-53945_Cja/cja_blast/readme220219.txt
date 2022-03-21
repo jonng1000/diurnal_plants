@@ -1,0 +1,2 @@
+Not using this species as only has a few thousand EST sequences, which captures only a small fraction of
+the total number of genes (see 22/2/19 OneNote update for more details).

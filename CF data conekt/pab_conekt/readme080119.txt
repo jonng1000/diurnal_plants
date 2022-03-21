@@ -1,0 +1,16 @@
+1) Species description
+Picea abies, the Norway spruce or European spruce, is a species of spruce 
+native to Northern, Central and Eastern Europe. It has branchlets that typically 
+hang downwards, and the largest cones of any spruce, 9–17 cm long. 
+It is very closely related to the Siberian spruce (Picea obovata), which replaces 
+it east of the Ural Mountains, and with which it hybridises freely. The Norway spruce is 
+widely planted for its wood, and is the species used as the main Christmas tree in several 
+cities around the world. It was the first gymnosperm to have its genome sequenced, and one 
+clone has been measured as 9,560 years old.
+
+From Wikipedia.
+
+Colour CD1FC1
+Highlight DD1D1D
+
+2) Pab_Mat_edit_modified160119.txt is the correct gene expression file.

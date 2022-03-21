@@ -1,0 +1,5 @@
+this contains wrong time points infomation, which is basically this:
+1) tp12, tp16, tp20, tp24, -> D0, D4, D8, D12
+2) tp28, tp32, tp 36 -> L4, L8, L12
+
+refer to readme.txt in \Google Drive\RNAseq processing\PRJNA295848 Solanum spp for related info as well

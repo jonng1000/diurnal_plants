@@ -1,0 +1,24 @@
+mercator result of ath_conekt_edited2.fa but it fails to annotate genes
+
+1) Species description
+Arabidopsis thaliana, the thale cress, mouse-ear cress or arabidopsis, is a small 
+flowering plant native to Eurasia and Africa. A. thaliana is considered a weed; it is 
+found by roadsides and in disturbed land.
+
+A winter annual with a relatively short life cycle, A. thaliana is a popular model 
+organism in plant biology and genetics. For a complex multicellular eukaryote, 
+A. thaliana has a relatively small genome of approximately 135 megabase pairs (Mbp). 
+It was the first plant to have its genome sequenced, and is a popular tool for understanding 
+the molecular biology of many plant traits, including flower development and light sensing.
+
+From Wikipedia.
+
+Color 1DCD2E
+Highlight 31DDD2
+
+2) ath_conekt.fa is the correct cds file for conekt upload. ath_aa_conekt_edited.fa is the correct peptide
+file for conket upload. ath_aa_conekt.fa is not correct as the upper case issue is not corrected.
+Source files, Arabidopsis_thaliana.TAIR10.cds.all.fa and Arabidopsis_thaliana.TAIR10.pep.all.fa have
+splicing isoforms and are in upper case. hence needed to edit them to make the above final files.
+
+3) Ath_Mat_modified.txt is the correct gene expression file.

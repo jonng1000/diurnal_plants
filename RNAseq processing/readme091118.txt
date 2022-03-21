@@ -1,0 +1,21 @@
+1) sample_matrix_RNAseq.py script creates a gene expression matrix from the .tsv files from kallisto's output
+ - kallisto's output has gene IDs, which ultimately is derived from cds file
+ - e.g it produces a gene expression matrix using kallisto's output and E-GEOD-69469_summary, 
+ which is labelled as E-GEOD-69469_combined
+
+2) sra_dl_kallisto_quant.py script downloads sra files, runs kallisto quant on them, and then removes these files
+ - kallisto process:
+ - requires cds file
+ - kallisto generates an index file from cds file
+ - downloads sra data, then uses index file and sra data to produce kallisto output
+
+3) compare_cds.py used to see whether two different cds files are the same, because sometimes one cds
+file doesnt give me enough information, hence i need to use another cds to get what i need
+
+
+a) kallisto input and outfiles, along with script to dl SRA data is in soybean kallisto folder
+
+b) 270119
+Glycine_max.Glycine_max_v2.0.cds.all.fa.gz downloaded from older version of Ensemble Plants in 2018.
+In 2019, it got updated to v2.1. My version can be found at:
+ftp://ftp.ensemblgenomes.org/pub/plants/release-41/fasta/glycine_max/cds/

@@ -1,0 +1,5 @@
+These files are where the gene IDs are kept exactly the same as the original, however, Conekt doesn't seem
+to match the gene clusters correctly, so I'm not using them.
+
+GO_interproscan_pred_edit.tsv is the updated version of GO_interproscan_pred.tsv as it has "_v1.1" added to it.
+Ditto for kfl_aa_conekt_edited300119.fa.tsv in relation to kfl_aa_conekt_edited.fa.tsv.

@@ -1,0 +1,4 @@
+cpa_conekt_spoilt.fa is a spoilt fasta cds file as I removed genes with decimal value of >.1 as
+I thought they were isoforms, but they are not, as after removing isoforms, I've ~700 genes, which
+is unrealistic. Before removing the decimals, I have about ~24 000 genes, hence the decimals are not
+likely to be isoforms

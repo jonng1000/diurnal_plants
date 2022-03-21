@@ -1,0 +1,4 @@
+For guidance on how to recreate these files, can look in the outdated folder since the general content of those
+files are correct, its only the gene IDs which are outdated.
+
+Authors didn't explicity state when darkness occured, but based on graph, we can assume 2 am is in the middle.

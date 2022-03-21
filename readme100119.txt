@@ -1,0 +1,16 @@
+* at the end of some peptide files. Conekt doesn't need peptide sequences so this is not relevant.
+Interpro can't handle * so need to remove. Not sure of OrthoFinder can handle it, but I will be
+giving it files with * removed so it doesnt matter.
+
+Normally, I capitalised the first letter of each gene but from kfl onwards (the updated version where I added '_v1.1'
+to the end of the gene IDs) I stopped and just decided to use whatever gene IDs is given in the original cds file,
+regardless of case -> simplifies things.
+
+"database touch up" folder -> has combined cds and aa files for blast, and logos
+
+GO file, go.obo is located in 
+D:\GoogleDrive\Diurnal expression database\RNAseq processing\PRJNA295848 Solanum spp\
+sol_lyco_conket_info
+
+as that is the first species i used to build conekt, and the go file only needed to be uploaded
+once.

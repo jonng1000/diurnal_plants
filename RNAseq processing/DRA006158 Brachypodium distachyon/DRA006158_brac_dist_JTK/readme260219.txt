@@ -1,0 +1,2 @@
+DRA006158_combined_PCA_JTK.txt is from DRA006158_combined_PCA.txt.
+DRA006158_combined_PCA_JTK.txt has time points arranged to suit JTK.

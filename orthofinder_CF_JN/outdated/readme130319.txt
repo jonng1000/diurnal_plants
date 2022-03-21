@@ -1,0 +1,18 @@
+OrthoFinder with diamond takes ~12h to run
+
+status for morning upload (spoilt one)
+uploading gene families -> Orthogroups.txt
+~2.5h
+
+uploading trees -> SequenceIDs_edit.txt; orthofinder_trees.tar.gz
+~10-15min?
+
+reconciling trees
+start: ~2.5h and crashed halfway
+
+To make clades for reconciling trees step, req SpeciesTree_rooted.txt from 
+<file path>/Results_Mar13/Orthologues_Mar13
+- select the 
+
+these files are spoilt cause it peptide files and cds files are not 1:1 ->
+need to download peptide files from conekt to make it work

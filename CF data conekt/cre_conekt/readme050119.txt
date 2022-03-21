@@ -1,0 +1,30 @@
+1) Species description
+Chlamydomonas reinhardtii is a single-cell green alga about 10 micrometres in diameter that swims 
+with two flagella. It has a cell wall made of hydroxyproline-rich glycoproteins, 
+a large cup-shaped chloroplast, a large pyrenoid, and an "eyespot" that senses light.
+
+Chlamydomonas species are widely distributed worldwide in soil and fresh water. 
+Chlamydomonas reinhardtii is an especially well studied biological model organism, partly 
+due to its ease of culturing and the ability to manipulate its genetics. When illuminated, 
+C. reinhardtii can grow photoautotrophically, but it can also grow in the dark if supplied 
+with organic carbon. Commercially, C. reinhardtii is of interest for producing 
+biopharmaceuticals and biofuel, as well being a valuable research tool in making hydrogen.
+
+From Wikipedia.
+
+Colour 1BCD21
+Highlight D4F022
+
+2) v.56 files are used for Conekt upload, v5.5 used by CF, but I've checked it and there's
+not much of a difference between v5.6 and CF data, hence I'm using v5.6
+
+3) cre_aa_conekt.fa and cre_conekt.fa are files which I've uploaded to Conekt. But cre_conekt.fa
+contains one gene which is too long for Conekt, hence I removed it and made cre_conekt_edit.fa,
+which can be uploaded to Conekt. cre_conekt_edit.fa is located in the folder
+"/cre_conekt.fa zipped files". Also copied to this folder.
+
+4) Cre_Mat_modified.txt is the correct gene expression file.
+Note: modify_JTK_cre.py script forgets to add 'probeset_id' to index name, which crashes pcc.py
+script, corrected it manually.
+
+CF JTK file only has unique genes

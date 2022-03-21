@@ -1,0 +1,14 @@
+ran JTK on .txt file ending with "_combined_PCA", as it contains the normalised read counts for gene expression
+created JTK.DRA006158, and copied and renamed the copy as JTK.bra_dis as this makes it easier for downstream
+heatmap and line graph (gene frequencies) generation
+
+291018
+DRA006158_combined_PCA_editJTK.txt is modified from DRA006158_combined_PCA.txt, but timepoints shifted so that
+they are in order for JTK
+JTK.DRA006158_edit.txt produced by JTK output, renamed to JTK.bra_dis_edit.txt
+
+051118
+JTK.bra_dis_edit.txt has timepoints shifted so that 2 days are collapsed into 1
+
+250219
+These are outdated as the gene IDs are wrong.

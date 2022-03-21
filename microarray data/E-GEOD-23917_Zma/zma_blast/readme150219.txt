@@ -1,0 +1,16 @@
+This folder contains scripts to process array information to make it suitable to blast/diamond
+array probe sequences against a CDS file, and the blast and diamond outputs.
+
+However, diamond is not good as its e-values are low. Probably due to the fact that it uses blastx to
+translate array probe nt sequence before searching against the peptide database, so the matches are
+not so good. blastn searches my array probes against the nt database, so its matches are more accurate.
+
+Use blastn for all future work now.
+
+1) zma_matches.txt is diamond output so ignore
+2) A-GEOD-10837_pre.txt is obtained from A-GEOD-10837.adf.txt
+3) explore_bmatches_diamond.py and explore_bmatches.py can be used to compare difference betwee
+blast and diamond output.
+4) results.out is the full blast output, but not needed
+5) results_tab.txt is selected blast output in tab-delimited format, used for my purposes.
+

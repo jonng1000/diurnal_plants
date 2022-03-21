@@ -1,0 +1,4 @@
+This is the fasta file with 4 genes removed, as they had non-ATCG letters, which causes Mercator
+to fail as it says there are protein and nucleotide sequences in my file. After removing
+them, Mercator runs successfully, however, it does not annotate my genes, and its output is here.
+Also, this was made using cdna file, so its wrong anyway

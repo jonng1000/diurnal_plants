@@ -1,0 +1,5 @@
+not sure where i got sly.aa.fasta but its probably from
+Solanum_lycopersicum.SL2.50.pep.all.fa anyway, its not used
+
+gene_clusters... these are outdated .txt files for gene clusters, not used
+

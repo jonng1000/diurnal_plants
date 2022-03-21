@@ -1,0 +1,11 @@
+ran JTK on .txt file ending with "_combined_PCA", as it contains the normalised read counts for gene expression
+created JTK.E-GEOD-53945, and copied and renamed the copy as JTK.cry_jap as this makes it easier for downstream
+heatmap and line graph (gene frequencies) generation
+
+291018
+E-GEOD-53945_combined_PCA_editJTK.txt is modified from E-GEOD-53945_combined_PCA.txt, but timepoints shifted so that
+they are in order for JTK
+JTK.cry_jap_edit.txt produced by JTK output
+
+051118
+JTK.cry_jap_edit.txt has timepoints shifted so that 2 days are collapsed into 1

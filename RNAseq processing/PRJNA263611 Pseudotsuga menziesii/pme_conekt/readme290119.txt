@@ -1,0 +1,29 @@
+1) Species description
+Pseudotsuga menziesii is an evergreen conifer species in the pine family, Pinaceae. 
+It is native to western North America and is known as Douglas fir, Douglas-fir, 
+Oregon pine, and Columbian pine. There are two varieties: coast Douglas-fir 
+(P. menziesii var. menziesii), and Rocky Mountain Douglas-fir (Pseudotsuga menziesii var. glauca).
+
+From Wikipedia.
+
+Colour #811DCD
+Highlight #DDC737
+
+CDS and peptide sequences obtained from https://bioinformatics.psb.ugent.be/plaza/versions/gymno-plaza/download
+Marek knows these people and their data is reliable, also they probably removed isoforms.
+
+2) Gene description
+select_names_desc_pme.py is produces the gene description file but it has unclear annotations (see OneNote entry
+2/1/19) hence I reran it in Mercator to produce better annotations for the gene description file -> don't use this
+script. Current name_description.txt file is correct as it has the Mercator output.
+
+Mercator job ID: Mercator46f9b441e9d5b63ce73dc4e47f07bd77
+URL: http://www.plabipd.de/portal/web/guest/mercator-sequence-annotation?p_p_id=Mercator_WAR_Mercatorportlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_Mercator_WAR_Mercatorportlet_JOBNAME=Mercator46f9b441e9d5b63ce73dc4e47f07bd77
+
+3) PRJNA263611_cPJ_edit.txt is made from PRJNA263611_combined_PCA_editJTK.txt -> collapsed 48 h time points
+into 24 h
+
+pme_modified.txt is the same as PRJNA263611_cPJ_edit.txt, its just that my create_gene_ex_annotation_pme.py
+creates this when it is run.
+
+JTK.pse_men_edit2.txt is made from JTK.pse_men_edit.txt. Basically I just changed the formatting of the time points.

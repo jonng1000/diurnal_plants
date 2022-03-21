@@ -1,0 +1,2 @@
+E-GEOD-23917_combined_PCA_editJTK.txt is from E-GEOD-23917_combined_PCA_edit.txt.
+E-GEOD-23917_combined_PCA_editJTK.txt has time points arranged to suit JTK.

@@ -1,0 +1,1 @@
+zma_aa_edited.fa is based on zma_aa_conekt.fa, edited to remove * for interpro.

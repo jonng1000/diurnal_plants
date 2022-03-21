@@ -1,0 +1,14 @@
+Process of files are as follows:
+
+Original file: E-GEOD-69469_combined.txt which makes E-GEOD-69469_combined_PCA.txt
+
+E-GEOD-69469_colourbar_pre.csv is to convert time points into light and dark
+periods.
+
+timepoints_in_cols.py produces timepoints_in_cols.tsv which inserts decimals
+into light and dark periods.
+
+E-GEOD-69469_colourbar.csv maps light and dark periods into colour bar values.
+
+PCA 1 plot w colourbar.py uses E-GEOD-69469_combined_PCA.txt and E-GEOD-69469_colourbar.csv
+to produce PCA plot.

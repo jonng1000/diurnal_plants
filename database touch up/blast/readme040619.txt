@@ -1,0 +1,6 @@
+Files here are all the aa and cds sequences from the 17 species in the diurnal database.
+Copied from their respective sources, cds files are from individual species folders in Google
+Drive, while the aa files are from workstation, since they were copied there in the past, to
+run OF.
+
+Files are named as all_species_cds.txt and all_species_aa.txt respectively.

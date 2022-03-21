@@ -1,0 +1,4 @@
+these Pearson correlation (PCC) files generated using the pcc.py script, but they are wrong as
+PRJNA295848_sol_lyco_combined_PCA.txt was used, which is the original gene expression file
+containing gene IDs with decimals, hence reran this script on 121118 with the modifiled
+file without decimals.

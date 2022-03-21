@@ -1,0 +1,21 @@
+1) Species description
+Porphyridium purpureum is unicellular, mesophilic organism belonging to the red alga (Rhodophyta)
+group. Rhodophyta form a monophyletic lineage comprising around 6,100 known species
+and 14,000 that are estimated to exist1. These taxa lack both flagella and centrioles
+during their life cycle. Rhodophytes include many unicellular mesophilic lineages,
+the extremophilic Cyanidiophyceae (for example, Cyanidioschyzon and Galdieria) that
+live in hot springs such as in Yellowstone National Park, and economically important seaweeds
+such as Gracilaria and Pyropia (including Porphyra)3 that are sources of agar and nori,
+respectively. 
+
+Bhattacharya D, Price DC, Chan CX, et al. Genome of the red alga Porphyridium purpureum. Nat Commun. 2013;4:1941.
+
+Colour #E0EB49
+Highlight #0DDD3E
+
+2) Realised Porphyridium_CDS_UPDATED.fasta is good enough for upload hence there's no need to create
+ppu_conekt.fa
+
+3) Ppu_Mat_edit_modified160119.txt is the correct gene expression file.
+Note: modify_JTK_ppu.py script forgets to add 'probeset_id' to index name, which crashes pcc.py
+script, corrected it manually.

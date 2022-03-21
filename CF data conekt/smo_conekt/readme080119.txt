@@ -1,0 +1,25 @@
+1) species description
+
+Selaginella moellendorffii is a lycophyte that is an important model organism, especially in 
+comparative genomics. S. moellendorffii is a member of an ancient vascular plant lineage that 
+first appeared in the fossil record some 400 million years ago. They would later form a dominant 
+part of the world's flora during the Carboniferous period. These lycopsids lack true leaves 
+(having microphylls instead) and roots and thus represent an important node on the plant 
+evolutionary tree. As the oldest extant division of the vascular plants, they are essential 
+to understanding the evolution of plants as a whole.
+
+From Wikipedia.
+
+Colour #8F25CD
+Highlight #F7B23B
+
+2) gene descriptions
+From JGI Phytozome, there are two different annotation files for the genes, defline.txt and
+annotation_info.txt. Based upon discussion with MM (OneNote entry 28/12/18 Update), I will use
+annotation_info.txt since that gives more rows of information, and defline.txt seems more like
+what InterPro will give, so will ignore it.
+
+3) Smo_Mat_edit_modified160119.txt is the correct gene expression file.
+Note: modify_JTK_smo.py script forgets to add 'probeset_id' to index name, which crashes pcc.py
+script, corrected it manually.
+- gene IDs are "402070" instead of "Smo402070|PACid_15401278"

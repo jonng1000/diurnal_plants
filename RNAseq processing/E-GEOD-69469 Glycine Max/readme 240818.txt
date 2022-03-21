@@ -1,0 +1,8 @@
+1) kallisto input and outfiles, along with script to dl SRA data is in soybean kallisto folder
+2) sample_matrix_RNAseq script produces a gene expression matrix using kallisto's output and 
+E-GEOD-69469_summary, which is labelled as E-GEOD-69469_combined
+
+270119
+Glycine_max.Glycine_max_v2.0.cds.all.fa.gz downloaded from older version of Ensemble Plants in 2018.
+In 2019, it got updated to v2.1. My version can be found at:
+ftp://ftp.ensemblgenomes.org/pub/plants/release-41/fasta/glycine_max/cds/

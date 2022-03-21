@@ -1,0 +1,8 @@
+For guidance on how to recreate these files, can look in the outdated folder since the general 
+content of those files are correct, its only the gene IDs which are outdated.
+
+~43 000 genes from cds file, but only about ~30 000 probes map to these genes after
+removing duplicates by only keeping the first gene.
+reaosn: easier to code this in python.
+
+~30 000 genes are left in expression matrix.

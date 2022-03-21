@@ -1,0 +1,5 @@
+Arabidopsis_thaliana.TAIR10.cds.all.fa was used as input file, isoforms removed as only transcripts with .1
+in their gene IDs were kept. This prodcued ath_conket.fa in parent folder. Then test_ATCG.py was ran to check
+for and remove sequences not solely comprised of ATCG. This produced ath_conekt_edited.fa. This was edited using
+edit_format.py to ensure case matches CF's JTK output. This produced ath_conekt_edited2.fa which was ran using
+Mercator, but it did not annotate the genes.

@@ -1,0 +1,111 @@
+in the gene annotation file, ITAG3.2_CDS.fasta, there is one gene with no annotation (function),
+but ignore it as its just one out of the thousands. just say that it has "unknown function"
+
+<30min to upload gene desc for sol lyco (with indexing enabled)
+
+from http://geneontology.org/page/download-ontology
+download go.obo
+
+from https://www.ebi.ac.uk/interpro/download.html
+download InterPro entry details file
+###############################################################################
+these scripts are used to process files in order of instructions in Marek's conekt tutorial
+https://drive.google.com/file/d/1JU9grsINkcSwlj6XIefECUvfAt89xVpA/view
+
+1) starting file is the Solanum_lycopersicum.SL2.50.cds.all.fa file, downloaded from 
+ftp://ftp.ensemblgenomes.org/pub/plants/release-41/fasta/solanum_lycopersicum/cds/
+
+it is converted to sly_conekt.fa to get rid of decimals after the gene ID, and extra words in the
+fasta headers. sly_conekt.fa is the first file to be uploaded
+
+Also used ITAG3.2_CDS.fasta from
+ftp://ftp.solgenomics.net/tomato_genome/annotation/ITAG3.2_release/
+as this has the gene desc and the above does not, both looks to be the same thing
+
+- checked with Marek and these files do not have isoforms as they all end with ".1", which
+indicates that they are the primary transcript (updated 280519)
+
+Species description to upload:
+Solanum lycopersicum, the domesticated tomato, is the edible, often red, berry of the nightshade family.
+
+Numerous varieties of the tomato plant are widely grown in temperate climates across the world, with greenhouses allowing for the production of tomatoes throughout all seasons of the year. Tomato plants typically grow to 1–3 meters (3–10 ft) in height. They are vines that have a weak stem that sprawls and typically needs support. Indeterminate tomato plants are perennials in their native habitat, but are cultivated as annuals. Determinate, or bush, plants are annuals that stop growing at a certain height and produce a crop all at once. The size of the tomato varies according to the cultivar, with a range of 0.5–4 inches (1.3–10.2 cm) in width.
+
+From Wikipedia.
+
+Color CD3914
+Highlight E9F024
+
+2) name_description.txt is the file containing gene descripts, uploaded at the "Add descriptions stage"
+
+3) downloaded go.obo and interpro.xml.gz as input for the GO and InterPro uploads
+
+4) ITAG3.2_proteins_interproscan.tsv is the InterProScan file used to add interpro info to sequences, but need to process it to
+interproscan_conekt.tsv, and upload this one
+
+Interproscan can only take in protein sequences, not DNA, hence I need to download the amino acid fasta file which is
+translated from the DNA cds file 
+
+5) Uploading expression profile:
+normalized matrix file: PRJNA295848_sol_lyco_modified.txt, produced from PRJNA295848_sol_lyco_combined_PCA.txt
+annotation file: gene_ex_annotation.txt
+order and colours: order_colours.txt
+
+6) Co-expression network:
+Description: Solanum release
+Limit: 100
+PCC-cutoff: -2.0
+File to upload: xxx.PCC
+
+7) Add Coexpression Clusters
+Description: JTK lag assignments
+Min cluster size: set to 1, if I leave it at the default of 10, will not recognise the dummy
+strings i use to break up the rows, as I want the order of rows to correspond exactly to the
+time points of the clusters.
+-> this is because, the dummy string is counted as one cluster if min size is set to 1, if it
+is set to 10, then the dummy string will not meet the min and will be skipped.
+File to upload: gene_clusters.txt
+
+8) Expression specificity section:
+Condition specificity -> dont have to upload any data here, just follow what Marek writes in his slides and
+click the add button. Under "Description", write "Condition specificity"
+
+Tissue specificity -> upload the tissue_specificity.txt file and click the add button.
+Under "Description", write "Tissue specificity"
+
+8) OrthoFinder output
+Results_Mar11 is output folder of Orthofinder output, name will change based on date
+
+Need Orthogroups.txt file, its location is
+<file path>/Results_Mar11
+
+Need SequenceIDs.txt file, its location is
+<file path>/Results_Mar11/WorkingDirectory/SequenceIDs.txt
+
+Add Trees (from OrthoFinder output) step
+Trees are added in order, with the latest tree appearing at the bottom in the table shown in the
+"Tree Methods" page in the "Browse" tab
+
+Trees are found in
+<file path>/Results_Mar11/Orthologues_Mar11/WorkingDirectory/dlcpar
+Note that there are tons of files e.g one run gave ~86 00 files
+
+9) slide 42 in Marek's presentation
+some of the buttons take a while, but generally less than 20min? the last one, calculate
+gene ontology enrichment in the neighborhoods, took about 6.5h
+
+Build Coexpression Clusters - MM's slides says can take about a few hours, took about 50min for me
+(first run for sly, for spe, started abt 1130, still running)
+
+Misc
+ran compare_cds.py on Solanum_lycopersicum.SL2.50.cds.all.fa and ITAG3.2_CDS.fasta
+Solanum_lycopersicum.SL2.50.cds.all.fa is the one i used for kallisto, but has less genes than
+ITAG3.2_CDS.fasta. 
+
+ITAG3.2_CDS.fasta was used to generate the gene description file. Solanum_lycopersicum.SL2.50.cds.all.fa
+has some genes not found in ITAG3.2_CDS.fasta, Coneket handles it by saying no gene description, so its fine.
+It doesnt crash, because if it does, I will need to manually write unknown function for each of those genes
+
+Whole numbers are gene IDs, stuff after that can mean different things like splicing isoforms
+
+linux commands for sol lyco data in workstation:
+cd ~/JN/orthofinder_output/OrthoFinder/Results_Nov30_2

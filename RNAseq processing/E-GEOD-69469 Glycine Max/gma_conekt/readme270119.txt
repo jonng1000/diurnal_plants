@@ -1,0 +1,28 @@
+1) Species description
+The soybean (Glycine max), or soya bean, is a species of legume native to East Asia, 
+widely grown for its edible bean, which has numerous uses.
+
+Fat-free (defatted) soybean meal is a significant and cheap source of protein for animal 
+feeds and many packaged meals. For example, soybean products, such as textured vegetable 
+protein (TVP), are ingredients in many meat and dairy substitutes. The beans contain 
+significant amounts of phytic acid, dietary minerals and B vitamins. Soy vegetable oil, 
+used in food and industrial applications, is another product of processing the soybean crop. 
+Traditional unfermented food uses of soybeans include soy milk, from which tofu and tofu 
+skin are made. Fermented soy foods include soy sauce, fermented bean paste, natto, and tempeh.
+
+From Wikipedia.
+
+Colour 8324B3
+Highlight 211BD1
+
+Mercator (outdated)
+mercator job id
+Mercator74962fa555ff58658c31790f0687d2de
+mercator job url
+http://www.plabipd.de/portal/web/guest/mercator-sequence-annotation?p_p_id=Mercator_WAR_Mercatorportlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_Mercator_WAR_Mercatorportlet_JOBNAME=Mercator74962fa555ff58658c31790f0687d2de
+
+2) Sequences
+Previously, used cds file from Ensemble for PCA, kallisto, JTK and creating gene expression file.
+However, this used transcript IDs e.g. KRH68680, which is wrong, as the correct IDs for genes
+are e.g. Glyma.01G000100. Hence I need to find the correct cds file, which is from JGI Phytozome
+as it uses these IDs and clearly labels which file only contains primary transcripts.

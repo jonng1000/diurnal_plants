@@ -1,0 +1,14 @@
+ran JTK on .txt file ending with "_controls_PCA", as it contains the normalised read counts for gene expression
+created JTK.E-MEXP-2509, and copied and renamed the copy as JTK.pop_tri as this makes it easier for downstream
+heatmap and line graph (gene frequencies) generation
+
+301018
+E-MEXP-2509_combined_PCA_editJTK.txt is modified from E-MEXP-2509_combined_PCA.txt, but timepoints shifted so that
+they are in order for JTK
+JTK.pop_tri_edit.txt produced by JTK output
+
+051118
+JTK.pop_tri_edit.txt has timepoints shifted so that 2 days are collapsed into 1
+
+060319
+These are outdated as the gene IDs are wrong.
